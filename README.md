@@ -1,12 +1,10 @@
 # 🏚️ Análise de Rachaduras com Visão Computacional
 
-### Projeto Final – Visão Computacional Aplicada à Robótica de Resgate
+### Projeto – Visão Computacional Aplicada à Robótica de Resgate
 
 **Autores:**
 - Gabriel José Spioni Estevão – RM94581  
 - Marcos Miglioranci Liberati – RM96291  
-
----
 
 ## 🧠 Contexto
 
@@ -55,13 +53,14 @@ Baseada nas métricas extraídas:
 - HTML + Bootstrap 5 (interface responsiva)
 
 
-## 📦 Instalação e Execução
-
-### 1. Instalação de pacotes
-
+## 📦 Instalação
+Bibliotecas necessárias para rodar o Projeto:
 ```bash
 pip install flask werkzeug opencv-python
 ```
+
+
+
 
 ## 2. Como Executar
 
@@ -70,8 +69,10 @@ Com IDE própria (pycharm/etc) navegue ao diretório da aplicação e inicialize
 ou pelo terminal, navegue até o diretório instalado e utilize: python app.py
 
 - Acesse a interface web.
-  No terminal aparecerá algo como:  * Running on http://127.0.0.1:5000
-- Envie uma imagem da fachada ou estrutura a ser analisada.
+  No terminal aparecerá algo como:  ```
+                                    Running on http://127.0.0.1:5000
+                                    ```
+- Envie uma das imagens de rachadura disponíveis na pasta "Images".
 - Aguarde o processamento.
 
 Veja o resultado com:
@@ -83,7 +84,7 @@ Veja o resultado com:
 
 - O histórico das últimas análises fica disponível na mesma página, com opção de limpeza.
 
-## 2.5 Estrutura do Projeto
+## 📂 2.5 Estrutura do Projeto
 
 ```php
 ├── app.py                # Aplicação Flask
@@ -92,16 +93,14 @@ Veja o resultado com:
 │   └── index.html        # Interface HTML com Bootstrap
 ├── static/
 │   └── resultados/       # Imagens originais e processadas
+├── images/               # Imagens de exemplo para teste
 └── README.md             # Este documento
 ```
 
 ## 3. 📜 Licença e Aviso
 
-Este projeto foi desenvolvido exclusivamente para fins **acadêmicos** como parte da disciplina de **Visão Computacional Aplicada à Robótica de Resgate em Desastres Naturais** no curso de Engenharia da Computação.
+Este projeto foi desenvolvido exclusivamente para fins **acadêmicos** como parte da disciplina de **Visão Computacional e Percepção para Robótica** no curso de Engenharia Mecatrônica.
 
-**Uso comercial não autorizado.**  
-Todos os direitos reservados aos autores.
 
----
 
 
