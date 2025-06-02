@@ -64,18 +64,24 @@ pip install flask werkzeug opencv-python
 
 ## 2. Como Executar
 
+## ⚠️ Atenção: Antes de rodar o app, verifique se as dependências estão instaladas no ambiente atual!
+Use o comando abaixo para instalar os requisitos, se necessário:
 
-Com IDE própria (pycharm/etc) navegue ao diretório da aplicação e inicialize app.py
-ou pelo terminal, navegue até o diretório instalado e utilize: python app.py
-
+### ✅ Com IDE (pycharm)
+- Navegue ao diretório da aplicação e inicialize app.py
+---
+### 💻  Sem IDE
+- Pelo terminal, navegue até o diretório instalado e utilize: python app.py
+---
 - Acesse a interface web.
-  No terminal aparecerá algo como:  ```
+  No terminal(ou IDE) aparecerá algo como:  ```
                                     Running on http://127.0.0.1:5000
                                     ```
 - Envie uma das imagens de rachadura disponíveis na pasta "Images".
 - Aguarde o processamento.
 
 Veja o resultado com:
+---
 - 📷 Imagem original
 - 🛠️ Imagem com contornos destacados
 
