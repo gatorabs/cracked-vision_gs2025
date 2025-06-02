@@ -1,0 +1,10 @@
+# Ignorar arquivos de configuração do IntelliJ IDEA / PyCharm
+*.iml
+
+# Ignorar arquivos XML (caso não queira rastrear nenhum XML)
+*.xml
+
+# Ignorar bytecode do Python
+*.pyc
+__pycache__/
+.idea/
