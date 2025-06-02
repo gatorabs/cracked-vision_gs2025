@@ -20,7 +20,6 @@ A aplicação web desenvolvida permite **enviar imagens**, processá-las automat
 - ⚠️ **Alerta**
 - ❌ **Risco de Desmoronamento**
 
----
 
 ## 🔍 Pipeline de Processamento
 
@@ -41,13 +40,12 @@ O pipeline de visão computacional implementado segue estas etapas:
 4. **Classificação de Severidade**
 Baseada nas métricas extraídas:
 
-| Área (px²) | Comprimento (px) | Classificação               
-|------------|------------------|------------------------------|
-| > 2000     | ou > 1500        | ❌ Risco de Desmoronamento  
-| > 1000     | ou > 700         | ⚠️ Alerta                   
-| ≤ 1000     | e ≤ 700          | ✅ Estável                  
+| Área (px²) | Comprimento (px) | Classificação         | Cor Indicativa |
+|------------|------------------|------------------------|----------------|
+| > 2000     | ou > 1500        | ❌ Risco de Desmoronamento | Vermelho       |
+| > 1000     | ou > 700         | ⚠️ Alerta               | Amarelo        |
+| ≤ 1000     | e ≤ 700          | ✅ Estável              | Verde          |             
 
----
 
 ## 💻 Tecnologias Utilizadas
 
@@ -56,7 +54,6 @@ Baseada nas métricas extraídas:
 - OpenCV (processamento de imagem)
 - HTML + Bootstrap 5 (interface responsiva)
 
----
 
 ## 📦 Instalação e Execução
 
@@ -68,19 +65,14 @@ pip install flask werkzeug opencv-python
 
 ## 2. Como Executar
 
----
 
-Com ide própria (pycharm) navegue ao diretório da aplicação e inicialize app.py
+Com IDE própria (pycharm/etc) navegue ao diretório da aplicação e inicialize app.py
 ou pelo terminal, navegue até o diretório instalado e utilize: python app.py
-
----
 
 - Acesse a interface web.
   No terminal aparecerá algo como:  * Running on http://127.0.0.1:5000
 - Envie uma imagem da fachada ou estrutura a ser analisada.
 - Aguarde o processamento.
-
----
 
 Veja o resultado com:
 - 📷 Imagem original
@@ -89,13 +81,11 @@ Veja o resultado com:
 - 📊 Área e comprimento detectados
 - 🟢🟡🔴 Classificação da estrutura
 
----
-
 - O histórico das últimas análises fica disponível na mesma página, com opção de limpeza.
 
 ## 2.5 Estrutura do Projeto
 
-.
+```php
 ├── app.py                # Aplicação Flask
 ├── processamento.py      # Pipeline de visão computacional
 ├── templates/
@@ -103,7 +93,7 @@ Veja o resultado com:
 ├── static/
 │   └── resultados/       # Imagens originais e processadas
 └── README.md             # Este documento
-
+```
 
 ## 3. 📜 Licença e Aviso
 
